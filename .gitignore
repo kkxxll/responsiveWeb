@@ -1,8 +1,9 @@
 *~
 .DS_Store
-
+.gitignore
+.editorconfig
 .idea
-
 node_modules
 src
-doc
+gulpfile.js
+
