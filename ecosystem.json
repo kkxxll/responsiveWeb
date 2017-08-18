@@ -1,0 +1,29 @@
+{
+    "apps": [
+        {
+            "name": "responsiveWeb",
+            "script": "app.js",
+            "env": {
+                "COMMON_VARIABLE": "true"
+            },
+            "env_production": {
+                "NODE_ENV": "production"
+            }
+        }
+    ],
+    "deploy": {
+        "production": {
+            "user": "kk_manager",
+            "host": ["119.23.43.161"],
+            "port": "37777",
+            "ref": "origin/master",
+            "repo": "git@github.com:kkxxll/responsiveWeb.git",
+            "path": "/www/responsiveWeb/production",
+            "ssh_options": "StrictHostKeyChecking=no",
+            "env": {
+                "NODE_ENV": "production"
+            }
+        }
+    }
+}
+
