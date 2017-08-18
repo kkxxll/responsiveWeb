@@ -41,7 +41,7 @@ $(document).ready(function(){
 
     $img.each(function(idx, item) {
       var default_src = $(item).attr('src');
-      default_src = default_src.substr(0,7);
+      default_src = default_src.substr(0,24);
       default_src+=(per+'.jpg');
       $(item).attr('src', default_src)
     })
